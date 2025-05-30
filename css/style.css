@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+@font-face {
+    font-family: Gotham;
+    src: url(../fonts/gotham/GOTHAM-MEDIUM.TTF);
+}
+
+
 .navbar-logo{
     width:20%;
     height: auto;
@@ -193,4 +200,22 @@ p{
 
 .section7{
     background-color: linear-gradient(to left, #86A8B6, #B6C4DE);
+}
+
+.banner3-content1 {
+    width: 40%;
+    position: absolute;
+    color: #FFFFFF; 
+    margin-top: 20%;
+    left: 9%;
+}
+
+.banner3-content2 {
+    position: absolute;
+    color: #FFFFFF; 
+    margin-left: 70%;
+    margin-top: 5%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
 }
