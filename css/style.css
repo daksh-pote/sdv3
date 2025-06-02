@@ -78,7 +78,7 @@
 .banner-subheading {
     font-family: Gotham;
     font-weight: 500;
-    font-size: 28px;
+    font-size: 1.458vw;
     line-height: 100%;
     letter-spacing: 4px;
     color: #ffffff;
@@ -87,7 +87,7 @@
 .banner-heading {
     font-family: "Ubuntu Sans", sans-serif;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 3.125vw;
     line-height: 1.1;
     letter-spacing: 0%;
     padding: 10px 0;
@@ -221,5 +221,5 @@ p{
 }
 
 .footer{
-    background-color: linear-gradient(to left, #384B70, #507687);
+    color: #FFFFFF;
 }
