@@ -70,9 +70,9 @@
 .banner-content {
     width: 40%;
     position: absolute;
-    left: 12%;
-    top: 50%;
-    color: #FFFFFF;   
+    color: #FFFFFF; 
+    left: 9%;  
+    margin-top: 5%; 
 }
 
 .banner-subheading {
@@ -202,6 +202,14 @@ p{
     background-color: linear-gradient(to left, #86A8B6, #B6C4DE);
 }
 
+.banner2-content {
+    width: 40%;
+    position: absolute;
+    color: #FFFFFF; 
+    left: 9%;  
+    margin-top: 5%;
+}
+
 .banner3-content1 {
     width: 40%;
     position: absolute;
@@ -217,7 +225,6 @@ p{
     margin-top: 5%;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 24px;
 }
 
 .footer{
