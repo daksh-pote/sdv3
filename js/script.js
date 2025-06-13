@@ -2,10 +2,16 @@ window.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                const words = entry.target.querySelectorAll('.word');
-                words.forEach((word, index) => {
-                    setTimeout(() => word.classList.add('active'), index * 100);
-                });
+                if (entry.target.classList.contains('word-reveal')) {
+                    const words = entry.target.querySelectorAll('.word');
+                    words.forEach((word, index) => {
+                        setTimeout(() => word.classList.add('active'), index * 100);
+                    });
+                } else {
+                    // For fade-in block-level animation
+                    entry.target.classList.add('active');
+                }
+
                 observer.unobserve(entry.target);
             }
         });
@@ -16,8 +22,11 @@ window.addEventListener('DOMContentLoaded', () => {
         el.innerHTML = words.map(word => `<span class="word">${word}</span>`).join(' ');
     }
 
-    document.querySelectorAll('.word-reveal').forEach(el => {
-        wrapWords(el);
+    // Setup for both animation types
+    document.querySelectorAll('.word-reveal, .fade-in').forEach(el => {
+        if (el.classList.contains('word-reveal')) {
+            wrapWords(el);
+        }
         requestAnimationFrame(() => observer.observe(el));
     });
 });
